@@ -38,8 +38,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     users = load_users()
 
     if text == "Stellar Address":
-        await update.message.reply_text(f"العنوان:
-`{STELLAR_ADDRESS}`", parse_mode="Markdown")
+        await update.message.reply_text(f"العنوان:\n`{STELLAR_ADDRESS}`", parse_mode="Markdown")
+
 
     elif text == "Memo Code":
         if user_id in users:
